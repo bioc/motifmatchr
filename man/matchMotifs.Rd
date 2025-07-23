@@ -29,12 +29,12 @@ matchMotifs(pwms, subject, ...)
   "positions"), p.cutoff = 5e-05, w = 7, ranges = NULL)
 
 \S4method{matchMotifs}{PWMatrixList,GenomicRanges}(pwms, subject,
-  genome = GenomeInfoDb::genome(subject), bg = c("subject", "genome",
+  genome = Seqinfo::genome(subject), bg = c("subject", "genome",
   "even"), out = c("matches", "scores", "positions"), p.cutoff = 5e-05,
   w = 7)
 
 \S4method{matchMotifs}{PWMatrixList,RangedSummarizedExperiment}(pwms, subject,
-  genome = GenomeInfoDb::genome(subject), bg = c("subject", "genome",
+  genome = Seqinfo::genome(subject), bg = c("subject", "genome",
   "even"), out = c("matches", "scores", "positions"), p.cutoff = 5e-05,
   w = 7)
 
